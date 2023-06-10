@@ -31,4 +31,7 @@ The built-in `main()` offers a example of how to use it.  Features:
     locus of initialization from the logic where the callback will be active.
     `start()` returns after the historic lookup and processing are complete and
     the websocket listener has been established, leaving a subthread running.
- *  Subscription can be formally shut down with the `stop()` method. 
+ *  Subscription can be formally shut down with the `stop()` method.  Currently
+    there is no use case to restart the subscription other than creating a
+    new EthLogSubscriber instance.
+    

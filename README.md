@@ -24,7 +24,8 @@ The built-in `main()` offers a example of how to use it.  Features:
     `data` portion of the log into a well-structured dictionary of names and
     real types.
  *  The web3 JSON-RPC has no facility to lookup a block by timestamp.  As this
-    is a frequent use case, it is implemented in EthLogSubscriber.  The closest
+    is a frequent use case, it is implemented in EthLogSubscriber and further
+    simplified by using a `datetime.datetime` type in the method.  The closest
     block *after* the given `fromDate` will be used as a starting point.
  *  Nothing happens until `start()` is called.   This permits separation of the
     locus of initialization from the logic where the callback will be active.

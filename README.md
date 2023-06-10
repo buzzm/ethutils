@@ -28,4 +28,6 @@ The built-in `main()` offers a example of how to use it.  Features:
     block *after* the given `fromDate` will be used as a starting point.
  *  Nothing happens until `start()` is called.   This permits separation of the
     locus of initialization from the logic where the callback will be active.
+    `start()` returns after the historic lookup and processing are complete and
+    the websocket listener has been established, leaving a subthread running.
  *  Subscription can be formally shut down with the `stop()` method. 
